@@ -1,0 +1,198 @@
+/*
+Author: Ashley Cox
+File Name: styles.css
+Date: 01/31/2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style Rules for Body and Images */
+body {
+    background-color: #9fa1a1;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Style Rules for Mobile Viewport */
+
+/* Style Rules to Show Mobile Class and Hide Tab-Desk Class */
+
+.tab-desk, .desktop {
+    display: none;
+}
+
+/* Style Rules for Header Area */
+
+h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+ /* Style Rules for Navigation Area */
+
+ nav {
+     display: inline-block center;
+ }
+
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     text-align: center;
+     padding: 0;
+ }
+
+ nav li {
+     display: inline-block;
+     font-size: 1.5em;
+     font-weight: bold;
+ }
+
+ nav li a  {
+     display: block;
+     color: black;
+     padding: 0.5em 2em;
+     text-decoration: none;
+ }
+
+ /* Style Rules for Main Content */
+
+ main {
+     padding: 2%;
+ }
+
+ main p {
+     font-size: 1.25em;
+     border-radius: 5px;
+     border-color: black;
+     border-style: double;
+     background-color: rgb(183, 215, 224);
+     text-align: center;
+
+}
+
+ main ul {
+     list-style-type: square;
+ }
+
+ main h2 {
+     color: black;
+     text-align: center;
+ }
+
+ main .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+ }
+
+ main img {
+     max-width: 100%;
+     border: 5px;
+     border-radius: 5px;
+     border-style: double;
+ }
+
+ #stripes {
+     max-width: 100%;
+     text-align: center;
+ }
+
+
+ /* Style Rules for Footer Content */
+
+ footer {
+     text-align: center;
+ }
+
+ /* Media Query for Tablet Viewport */
+ @media only screen and (min-width: 620px), print {}
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    /*Tablet Viewport: Style Rules for Nav Area */
+
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.53m;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+
+    /* Tablet Viewport: Style Rules for Footer Area */
+
+    footer {
+        overflow: auto;
+    }
+
+    #copyright {
+        float: left;
+        width: 65%;
+    }
+
+    /* Media Query for Desktop Viewport */
+    @media only screen and (min-width: 1000px) {
+
+        /* Desktop Viewport: Style Rules for Nav Area */
+
+    nav li {
+        font-size: 1.53em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        opacity: 0.5;
+    }
+    }
+
+    /* Desktop Viewport: Style Rules for Main Content */
+
+    .grid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+
+    /* Media Query for Large Desktop Viewports */
+    @media only screen and (min-width: 1921 px) {
+
+    .grid {
+        grid-template-columns: auto auto auto auto;
+    }    
+    }
+
+    /* Media Query for Print */
+    @media only screen and (print) {
+
+    body { 
+        background-color: white;
+        color: black;
+    }    
+    }
+ 
